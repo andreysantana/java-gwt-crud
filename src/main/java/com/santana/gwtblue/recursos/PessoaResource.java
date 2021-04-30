@@ -13,7 +13,7 @@ public class PessoaResource {
 	
 	@GetMapping
 	public ResponseEntity<Pessoa> buscarTodos() {
-		Pessoa p = new Pessoa("Andrey de Santana", 32, 'M', "Rua Bogotá");
+		Pessoa p = new Pessoa(null, "Andrey de Santana", 32, 'M', "Rua Bogotá");
 		return ResponseEntity.ok().body(p);
 	}
 }
